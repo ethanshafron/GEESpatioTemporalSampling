@@ -12,5 +12,6 @@ For the original idea, explanation, and examples.
 Use `devtools::install_github("ethanshafron/GEESpatioTemporalSampling")` to install.
 
 Right now this only works on point data - to sample Gpp from modis for an sf object with a column called date, we would do:
-
+`library(rgee)`
+`ee$Initialize()`
 `sampledData <- temporalSample(df = data, datecol = "Date", tempwin = 8, collection = "MODIS/006/MOD17A2H", band = "Gpp")`
