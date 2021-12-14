@@ -49,7 +49,7 @@ bandSelection <- function(img, band){
   return(out)
 }
 
-
+#' @export
 temporalSample <- function(df, datecol="", tempwin=1, collection = "", band = "", start="2000-01-01", end="2020-01-01", 
                            scalef=50, tileScale=1, dropNulls=F){
   # Define globals to be used in featurecollection$map(func) calls. I'm sure there is a cleaner way to do this
